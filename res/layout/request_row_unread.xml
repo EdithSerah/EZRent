@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- These components will be dynamically created
+and added to the ScrollView -->
+
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/request_row_unread"
+    android:gravity="center_horizontal|left"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:background="@drawable/button"
+    android:padding="1dp" >
+
+    <TextView
+        		android:id="@+id/request_row_property_TextView"
+	        	android:textColor="@color/black"
+               	android:gravity="center_horizontal|left"
+	        	android:layout_width="0dip"
+	        	android:textAppearance="?android:attr/textAppearanceSmall"
+        		android:layout_height="wrap_content"
+        		android:padding="3dp"
+        		android:layout_weight="7"
+	        	/>
+    <View
+        android:adjustViewBounds="true"
+        android:layout_width="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_height="match_parent" 
+        android:background="#DFDFDF"
+        android:gravity="center_horizontal|center_vertical" 
+        android:layout_weight="0"
+        android:animateLayoutChanges="true">
+    </View>
+    
+    <TextView
+        		android:id="@+id/request_row_subject_TextView"
+	        	android:textColor="@color/black"
+				android:gravity="center_horizontal|left"
+	        	android:layout_width="0dip"
+	        	android:textAppearance="?android:attr/textAppearanceSmall"
+        		android:layout_height="wrap_content"
+        		android:padding="3dp"
+        		android:layout_weight="10"
+	        	/>
+    
+    <TextView
+        		android:id="@+id/request_row_message_numberTV"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="hidden value"
+   				android:visibility="gone"/>
+    <View
+        android:adjustViewBounds="true"
+        android:layout_width="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_height="match_parent" 
+        android:background="#DFDFDF"
+        android:gravity="center_horizontal|center_vertical" 
+        android:layout_weight="0"
+        android:animateLayoutChanges="true">
+    </View>
+    <TextView
+        		android:id="@+id/request_row_date_TextView"
+	        	android:textColor="@color/black"
+               	android:gravity="center_horizontal|left"
+	        	android:layout_width="80dp"
+	        	android:textAppearance="?android:attr/textAppearanceSmall"
+        		android:layout_height="wrap_content"
+        		android:padding="3dp"
+	        	/>
+</TableRow>

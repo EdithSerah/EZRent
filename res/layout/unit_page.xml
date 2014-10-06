@@ -1,0 +1,320 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/egg_shell"
+    android:orientation="vertical"
+    tools:context=".LandlordInbox" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+    	<LinearLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+       		android:gravity="center_horizontal|center_vertical"
+        	android:orientation="horizontal" >
+
+        	<TextView
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginTop="3dp"
+            	android:gravity="center_horizontal"
+            	android:text="@string/unit_number"
+            	android:textAppearance="?android:attr/textAppearanceLarge"
+            	android:textStyle="bold"
+            	android:textColor="@color/black" />
+        	
+        	<TextView
+        	    android:id="@+id/UNIT_PAGE_unit_number_TextView"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginTop="3dp"
+            	android:layout_marginLeft="5dp"
+            	android:gravity="center_horizontal"
+            	android:textAppearance="?android:attr/textAppearanceLarge"
+            	android:textColor="@color/black" />
+		</LinearLayout>
+		
+    	<LinearLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dp"
+       		android:gravity="center_horizontal|center_vertical"
+        	android:orientation="horizontal" >
+
+        	<TextView
+        	    android:text="@string/prop"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:gravity="center_horizontal"
+            	android:textAppearance="?android:attr/textAppearanceMedium"
+            	android:textStyle="bold"
+            	android:textColor="@color/black" />
+        	
+        	<TextView
+        	    android:id="@+id/UNIT_PAGE_property_name_TextView"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="5dp"
+            	android:gravity="center_horizontal"
+            	android:textAppearance="?android:attr/textAppearanceMedium"
+            	android:textColor="@color/black" />
+		</LinearLayout>
+		
+    	<LinearLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:layout_marginLeft="10dp"
+        	android:layout_marginRight="10dp"
+        	android:layout_marginBottom="3dp"
+        	android:padding="5dp"
+        	android:background="@drawable/table"
+       		android:gravity="center_horizontal|center_vertical"
+        	android:orientation="vertical" >
+        	
+    	    <LinearLayout
+    	        android:layout_marginTop="3dp"
+    	        android:gravity="center_horizontal|center_vertical"
+    	        android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+    	        android:orientation="horizontal">
+
+        		<TextView
+        	    	android:text="@string/tenant_name"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:gravity="center_horizontal"
+            		android:textStyle="bold"
+            		android:textColor="@color/black" />
+        	
+        		<TextView
+        	    	android:id="@+id/UNIT_PAGE_tenant_first_name_TextView"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_marginLeft="5dp"
+            		android:gravity="center_horizontal"
+            		android:textColor="@color/black" />
+        	
+        		<TextView
+        	    	android:id="@+id/UNIT_PAGE_tenant_last_name_TextView"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_marginLeft="3dp"
+            		android:gravity="center_horizontal"
+            		android:textColor="@color/black" />
+        		
+        	</LinearLayout>
+        	
+    	    <LinearLayout
+    	        android:layout_marginTop="3dp"
+    	        android:gravity="center_horizontal|center_vertical"
+    	        android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+    	        android:orientation="horizontal">
+
+        		<TextView
+        	    	android:text="@string/tenant_phone_number"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:gravity="center_horizontal"
+            		android:textStyle="bold"
+            		android:textColor="@color/black" />
+        	
+        		<TextView
+        	    	android:id="@+id/UNIT_PAGE_tenant_phone_number_TextView"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_marginLeft="5dp"
+            		android:gravity="center_horizontal"
+            		android:textColor="@color/black" />
+        	
+			</LinearLayout>
+        	
+    	    <LinearLayout
+    	        android:layout_marginTop="3dp"
+    	        android:gravity="center_horizontal|center_vertical"
+    	        android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+    	        android:orientation="horizontal">
+
+        		<TextView
+        	    	android:text="@string/tenant_email"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:gravity="center_horizontal"
+            		android:textStyle="bold"
+            		android:textColor="@color/black" />
+        	
+        		<TextView
+        	    	android:id="@+id/UNIT_PAGE_tenant_email_TextView"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_marginLeft="5dp"
+            		android:gravity="center_horizontal"
+            		android:textColor="@color/black" />
+        	
+			</LinearLayout>
+			
+    	    <LinearLayout
+    	        android:layout_marginTop="3dp"
+    	        android:gravity="center_horizontal|center_vertical"
+    	        android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+    	        android:orientation="horizontal">
+
+        		<TextView
+        	    	android:text="@string/monthly_rent"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:gravity="center_horizontal"
+            		android:textStyle="bold"
+            		android:textColor="@color/black" />
+        		
+        		<TextView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="@string/dollar"
+            		android:layout_marginLeft="3dp"
+            		android:gravity="center_horizontal"
+            		android:textColor="@color/black" />
+        	
+        		<TextView
+        	    	android:id="@+id/UNIT_PAGE_monthly_rent_TextView"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_marginLeft="2dp"
+            		android:gravity="center_horizontal"
+            		android:textColor="@color/black" />
+        	
+			</LinearLayout>
+			
+    	    <LinearLayout
+    	        android:layout_marginTop="3dp"
+    	        android:gravity="center_horizontal|center_vertical"
+    	        android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+    	        android:orientation="horizontal">
+
+        		<TextView
+        	    	android:text="@string/lease_start_date"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:gravity="center_horizontal"
+            		android:textStyle="bold"
+            		android:textColor="@color/black" />
+        	
+        		<TextView
+        	    	android:id="@+id/UNIT_PAGE_start_date_TextView"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_marginLeft="5dp"
+            		android:gravity="center_horizontal"
+            		android:textColor="@color/black" />
+        	
+			</LinearLayout>
+			
+    	    <LinearLayout
+    	        android:layout_marginTop="3dp"
+    	        android:gravity="center_horizontal|center_vertical"
+    	        android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+    	        android:orientation="horizontal">
+
+        		<TextView
+        	    	android:text="@string/lease_end_date"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:gravity="center_horizontal"
+            		android:textStyle="bold"
+            		android:textColor="@color/black" />
+        	
+        		<TextView
+        	    	android:id="@+id/UNIT_PAGE_end_date_TextView"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_marginLeft="5dp"
+            		android:gravity="center_horizontal"
+            		android:textColor="@color/black" />
+        	
+			</LinearLayout>
+    	    
+    	    
+    	    
+		</LinearLayout>
+		
+    	<LinearLayout
+    	    android:layout_marginLeft="10dp"
+        	android:layout_marginRight="10dp"
+        	android:layout_width="match_parent"
+        	android:layout_height="0dip"
+        	android:layout_marginTop="5dp"
+        	android:padding="3dp"
+        	android:layout_weight="1"
+       		android:gravity="center_horizontal|center_vertical"
+        	android:orientation="vertical" >
+
+        	<TextView
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:gravity="center_horizontal"
+            	android:layout_marginBottom="2dp"
+            	android:text="@string/miscellaneous_notes"
+            	android:textAppearance="?android:attr/textAppearanceMedium"
+            	android:textStyle="bold"
+            	android:textColor="@color/black" />
+        </LinearLayout>
+
+
+
+           			<EditText
+	        	    	android:id="@+id/UNIT_PAGE_lease_notes_EditText"
+	        	    	android:layout_width="match_parent"
+	        	    	android:layout_height="270dp"
+	        	   		android:layout_marginLeft="10dp"
+	        	   		android:gravity="left|top"
+	        	   		android:layout_marginRight="10dp"
+	        	   		android:textAppearance="?android:attr/textAppearanceSmall"
+	        	   		android:layout_weight="1"
+	        	   		android:padding="5dp"
+	        	   		android:background="@drawable/textedit"
+               			android:inputType="textMultiLine"
+               			/>
+            
+        		
+    		<LinearLayout
+    	        android:gravity="center_horizontal|center_vertical"
+    	        android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_marginTop="5dp"
+        		android:layout_marginLeft="20dp"
+        		android:padding="5dp"
+        		android:layout_marginRight="20dp"
+    	        android:orientation="horizontal">
+
+        		<Button
+    				android:id="@+id/UNIT_PAGE_back_Button"
+        			android:layout_width="0dip"
+        			android:layout_weight="3"
+        			android:background="@drawable/button"
+        			android:layout_height="wrap_content"
+        			android:text="@string/back_properties" />
+        		
+        		<Button
+    				android:id="@+id/UNIT_PAGE_delete_Button"
+    				android:layout_marginLeft="10dp"
+        			android:layout_width="0dp"
+        			android:layout_weight="1"
+        			android:background="@drawable/button"
+        			android:layout_height="wrap_content"
+        			android:text="@string/delete" />
+        	
+			</LinearLayout>
+        	
+		</LinearLayout>
+
+</ScrollView>

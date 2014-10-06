@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ezrent.ezrent"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ezrentlogo4"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ezrent.ezrent.LogIn"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ezrent.ezrent.Wat"
+            android:label="@string/title_activity_wat"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.ezrent.ezrent.Landlord_Register_Activity"
+            android:label="@string/title_activity_landlord__register_" >
+        </activity>
+        <activity
+            android:name="com.ezrent.ezrent.Tenant_Register_Activity"
+            android:label="@string/title_activity_tenant__register_" >
+        </activity>
+        <activity
+            android:name="com.ezrent.ezrent.Homepage"
+            android:label="@string/title_activity_homepage" >
+        </activity>
+        <activity
+            android:name="com.ezrent.ezrent.LandlordHomepage"
+            android:label="@string/title_activity_landlord_homepage" >
+        </activity>
+        <activity
+            android:name="com.ezrent.ezrent.TenantHomepage"
+            android:label="@string/title_activity_tenant_homepage" >
+        </activity>
+        <activity
+            android:name="com.ezrent.ezrent.AddProperty"
+            android:label="@string/title_activity_add_property" >
+        </activity>
+        <activity
+            android:name="com.ezrent.ezrent.Landlord_Edit_Info"
+            android:label="@string/title_activity_landlord__edit__info" >
+        </activity>
+        <activity
+            android:name="com.ezrent.ezrent.LandlordInbox"
+            android:label="@string/title_activity_landlord_inbox" >
+        </activity>
+        <activity
+            android:name="com.ezrent.ezrent.PropertyPage"
+            android:label="@string/title_activity_property_page" >
+        </activity>
+        <activity
+            android:name="com.ezrent.ezrent.PropertyEditInfo"
+            android:label="@string/title_activity_property_edit_info" >
+        </activity>
+        <activity
+            android:name="com.ezrent.ezrent.AddUnit"
+            android:label="@string/title_activity_add_unit" >
+        </activity>
+        <activity
+            android:name="com.ezrent.ezrent.UnitPage"
+            android:label="@string/title_activity_unit_page"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.ezrent.ezrent.ReadMessage"
+            android:label="@string/title_activity_read_message" >
+        </activity>
+        <activity
+            android:name="com.ezrent.ezrent.Request"
+            android:label="@string/title_activity_request" >
+        </activity>
+        <activity
+            android:name="com.ezrent.ezrent.Tenant_Edit_Info"
+            android:label="@string/title_activity_tenant__edit__info" >
+        </activity>
+        <activity
+            android:name="com.ezrent.ezrent.ViewImage"
+            android:label="@string/title_activity_view_image" >
+        </activity>
+    </application>
+
+</manifest>

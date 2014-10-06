@@ -1,0 +1,208 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/egg_shell"
+    tools:context=".PropertyPage" >
+	
+    <LinearLayout
+        android:id="@+id/property_info_table1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/property_display_name_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/property_name"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/black"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/property_name_TextView"
+            
+         />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/property_info_table3"
+       android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/property_display_address_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="@string/address"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/black"
+            android:id="@+id/property_address_TextView"
+            
+         />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/property_info_table4"
+       	android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+		<TextView
+            android:id="@+id/property_display_city_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="@string/city"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/black"
+            android:id="@+id/property_city_TextView" />
+        
+        <TextView
+            android:id="@+id/property_display_state_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="7dp"
+            android:text="@string/state"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/black"
+            android:id="@+id/property_state_TextView" />
+        
+        <TextView
+            android:id="@+id/property_display_zip_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="7dp"
+            android:text="@string/zip_code"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/black"
+            android:id="@+id/property_zip_TextView" />
+        
+    </LinearLayout>
+    
+    <TableRow
+        android:id="@+id/property_info_table8"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/property_home_button"
+            android:background="@drawable/button"
+            android:text="@string/home"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+        <Button
+            android:id="@+id/property_edit_info_button"
+            android:background="@drawable/button"
+            android:layout_weight="1"
+            android:text="@string/delete_property"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+        
+		<ScrollView
+        	android:id="@+id/unit_ScrollView"
+        	android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:padding="5dp" >
+            
+			<TableLayout
+            	android:id="@+id/unit_TableScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:stretchColumns="yes" >
+			</TableLayout>
+			
+    	</ScrollView>
+    	
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/property_info_table5"
+        android:layout_width="match_parent"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/property_add_unit_button"
+            android:background="@drawable/button"
+            android:text="@string/add_unit"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            />
+    </TableRow>
+
+</TableLayout>

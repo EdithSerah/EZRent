@@ -1,0 +1,241 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/egg_shell"
+    tools:context=".Tenant_Register_Activity" >
+    
+    <TextView
+	    android:id="@+id/tenant_instuctions_text"
+	    android:text="@string/tenant_instructions"
+	    android:gravity="left|center_vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_marginLeft="20dp"
+	    android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+      	android:layout_height="wrap_content"
+      	android:textColor="@color/black"
+	/>
+     
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+         >
+        	
+		<LinearLayout
+	    	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/table"
+        	android:paddingBottom="10dp"
+        	android:layout_marginBottom="10dp"
+        	android:paddingLeft="15dp"
+    		android:paddingRight="15dp"
+    		android:paddingTop="5dp"
+        	android:orientation="vertical" >	    	
+	        
+	        	<TextView
+	        		android:id="@+id/tenant_first_name_ViewText"
+	        		android:text="@string/first_name"
+	        		android:gravity="left|center_vertical"
+	        		android:textColor="@color/black"
+	        		android:layout_marginLeft="20dp"
+	        		android:textStyle="bold"
+               		android:layout_marginRight="20dp"
+               		android:layout_marginTop="10dp"
+	        		android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+	        	/>
+	        	
+	        	<EditText
+	        	    android:id="@+id/tenant_first_name_EditText"
+	        	    android:background="@drawable/textedit"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_marginLeft="20dp"
+               		android:layout_marginRight="20dp"
+                	android:layout_marginTop="7dp"
+                	android:paddingBottom="6dp"
+    				android:paddingLeft="10dp"
+    				android:paddingRight="10dp"
+    				android:paddingTop="6dp"
+	        	    android:inputType="text" />
+	        
+	        	
+	    	    <TextView
+	        		android:id="@+id/tenant_last_name_ViewText"
+	        		android:text="@string/last_name"
+	        		android:gravity="left|center_vertical"
+	        		android:textColor="@color/black"
+	        		android:layout_marginLeft="20dp"
+	        		android:textStyle="bold"
+               		android:layout_marginRight="20dp"
+               		android:layout_marginTop="20dp"
+	        		android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+	        	/>
+	    	    
+	    	    <EditText
+	        	    android:id="@+id/tenant_last_name_EditText"
+	        	    android:background="@drawable/textedit"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_marginLeft="20dp"
+               		android:layout_marginRight="20dp"
+                	android:layout_marginTop="7dp"
+                	android:paddingBottom="6dp"
+    				android:paddingLeft="10dp"
+    				android:paddingRight="10dp"
+    				android:paddingTop="6dp"
+	        	    android:inputType="text" />
+	    	    
+	    	    <TextView
+	        		android:id="@+id/tenant_phone_number_ViewText"
+	        		android:text="@string/phone_number"
+	        		android:gravity="left|center_vertical"
+	        		android:textColor="@color/black"
+	        		android:layout_marginLeft="20dp"
+	        		android:textStyle="bold"
+               		android:layout_marginRight="20dp"
+               		android:layout_marginTop="20dp"
+	        		android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+	        	/>
+	    	    
+	    	    <EditText
+	        	    android:id="@+id/tenant_phone_number_EditText"
+	        	    android:background="@drawable/textedit"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_marginLeft="20dp"
+               		android:layout_marginRight="20dp"
+                	android:layout_marginTop="7dp"
+                	android:paddingBottom="6dp"
+    				android:paddingLeft="10dp"
+    				android:paddingRight="10dp"
+    				android:paddingTop="6dp"
+	        	    android:inputType="phone" />
+	    	    
+	    	    <TextView
+	        		android:id="@+id/tenant_email_ViewText"
+	        		android:text="@string/email"
+	        		android:gravity="left|center_vertical"
+	        		android:textColor="@color/black"
+	        		android:layout_marginLeft="20dp"
+	        		android:textStyle="bold"
+               		android:layout_marginRight="20dp"
+               		android:layout_marginTop="20dp"
+	        		android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+	        	/>
+	    	    
+	    	    <EditText
+	        	    android:id="@+id/tenant_email_EditText"
+	        	    android:background="@drawable/textedit"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_marginLeft="20dp"
+               		android:layout_marginRight="20dp"
+                	android:layout_marginTop="7dp"
+                	android:paddingBottom="6dp"
+    				android:paddingLeft="10dp"
+    				android:paddingRight="10dp"
+    				android:paddingTop="6dp"
+	        	    android:inputType="textEmailAddress" />
+	    	    
+	    	    <TextView
+	        		android:id="@+id/tenant_password_ViewText"
+	        		android:text="@string/password"
+	        		android:gravity="left|center_vertical"
+	        		android:textColor="@color/black"
+	        		android:layout_marginLeft="20dp"
+	        		android:textStyle="bold"
+               		android:layout_marginRight="20dp"
+               		android:layout_marginTop="20dp"
+	        		android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+	        	/>
+	    	    
+	    	    <EditText
+	        	    android:id="@+id/tenant_password_EditText"
+	        	    android:background="@drawable/textedit"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_marginLeft="20dp"
+               		android:layout_marginRight="20dp"
+                	android:layout_marginTop="7dp"
+                	android:paddingBottom="6dp"
+    				android:paddingLeft="10dp"
+    				android:paddingRight="10dp"
+    				android:paddingTop="6dp"
+	        	    android:inputType="textPassword" />
+	    	    
+	    	    <TextView
+	        		android:id="@+id/tenant_confirm_password_ViewText"
+	        		android:text="@string/confirm_password"
+	        		android:gravity="left|center_vertical"
+	        		android:textColor="@color/black"
+	        		android:layout_marginLeft="20dp"
+	        		android:textStyle="bold"
+               		android:layout_marginRight="20dp"
+               		android:layout_marginTop="20dp"
+	        		android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+	        	/>
+	    	    
+	    	    <EditText
+	        	    android:id="@+id/tenant_confirm_password_EditText"
+	        	    android:background="@drawable/textedit"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_marginLeft="20dp"
+               		android:layout_marginRight="20dp"
+                	android:layout_marginTop="7dp"
+                	android:paddingBottom="6dp"
+    				android:paddingLeft="10dp"
+    				android:paddingRight="10dp"
+    				android:paddingTop="6dp"
+	        	    android:inputType="textPassword" />    
+	    
+		</LinearLayout>
+		
+	</ScrollView>
+	
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="@color/egg_shell">
+    
+        <Button
+	    	android:id="@+id/tenant_register_Button"
+	        android:layout_width="wrap_content"
+	        android:layout_marginTop="0dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="3dp"
+	        android:layout_weight="3"
+	        android:layout_marginBottom="5dp"
+	        android:background="@drawable/button"
+			android:padding="5dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/register" />
+        
+        <Button
+	    	android:id="@+id/tenant_cancel_Button"
+	        android:layout_width="wrap_content"
+	        android:layout_marginTop="0dp"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="3dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginBottom="5dp"
+	        android:background="@drawable/button"
+			android:padding="5dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/cancel" />
+        
+ 	</LinearLayout>
+    
+</LinearLayout>

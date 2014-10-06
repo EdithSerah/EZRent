@@ -1,0 +1,316 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/egg_shell"
+    tools:context=".Landlord_Edit_Info" >
+    
+    <TextView
+	    android:id="@+id/landlord_instuctions_text"
+	    android:text="@string/landlord_edit"
+	    android:gravity="center_horizontal|center_vertical"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+	    android:layout_width="fill_parent"
+	    android:layout_marginLeft="20dp"
+	    android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+      	android:layout_height="wrap_content"
+      	android:textColor="@color/black"
+	    />
+     
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:padding="5dp"
+         >
+        	
+		<LinearLayout
+	    	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/table"
+        	android:paddingBottom="10dp"
+        	android:layout_marginBottom="10dp"
+        	android:paddingLeft="15dp"
+    		android:paddingRight="15dp"
+    		android:paddingTop="5dp"
+        	android:orientation="vertical" >
+	    	
+	        
+	        	<TextView
+	        		android:id="@+id/landlord_first_name_ViewText"
+	        		android:text="@string/first_name"
+	        		android:gravity="left|center_vertical"
+	        		android:textColor="@color/black"
+	        		android:layout_marginLeft="20dp"
+	        		android:textStyle="bold"
+               		android:layout_marginRight="20dp"
+               		android:layout_marginTop="10dp"
+	        		android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+	        	/>
+	        	
+	        	<EditText
+	        	    android:id="@+id/landlord_edit_first_name_EditText"
+	        	    android:background="@drawable/textedit"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_marginLeft="20dp"
+               		android:layout_marginRight="20dp"
+                	android:layout_marginTop="7dp"
+                	android:alpha=".3"
+                	android:paddingBottom="6dp"
+    				android:paddingLeft="10dp"
+    				android:paddingRight="10dp"
+    				android:paddingTop="6dp"
+	        	    android:inputType="text" />
+	        
+	        	
+	    	    <TextView
+	        		android:id="@+id/landlord_edit_last_name_ViewText"
+	        		android:text="@string/last_name"
+	        		android:gravity="left|center_vertical"
+	        		android:textColor="@color/black"
+	        		android:layout_marginLeft="20dp"
+	        		android:textStyle="bold"
+               		android:layout_marginRight="20dp"
+               		android:layout_marginTop="20dp"
+	        		android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+	        	/>
+	    	    
+	    	    <EditText
+	        	    android:id="@+id/landlord_edit_last_name_EditText"
+	        	    android:background="@drawable/textedit"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_marginLeft="20dp"
+               		android:layout_marginRight="20dp"
+                	android:layout_marginTop="7dp"
+                	android:paddingBottom="6dp"
+    				android:paddingLeft="10dp"
+    				android:paddingRight="10dp"
+    				android:paddingTop="6dp"
+    				android:alpha=".3"
+	        	    android:inputType="text" />
+	    	    
+	    	    <TextView
+	        		android:id="@+id/landlord_edit_email_ViewText"
+	        		android:text="@string/email"
+	        		android:gravity="left|center_vertical"
+	        		android:textColor="@color/black"
+	        		android:layout_marginLeft="20dp"
+	        		android:textStyle="bold"
+               		android:layout_marginRight="20dp"
+               		android:layout_marginTop="20dp"
+	        		android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+	        	/>
+	    	    
+	    	    <EditText
+	        	    android:id="@+id/landlord_edit_email_EditText"
+	        	    android:background="@drawable/textedit"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_marginLeft="20dp"
+               		android:layout_marginRight="20dp"
+                	android:layout_marginTop="7dp"
+                	android:paddingBottom="6dp"
+    				android:paddingLeft="10dp"
+    				android:paddingRight="10dp"
+    				android:paddingTop="6dp"
+    				android:alpha=".3"
+	        	    android:inputType="textEmailAddress" />
+	    	    
+	    	    <TextView
+	        		android:id="@+id/landlord_edit_phone_number_ViewText"
+	        		android:text="@string/phone_number"
+	        		android:gravity="left|center_vertical"
+	        		android:textColor="@color/black"
+	        		android:layout_marginLeft="20dp"
+	        		android:textStyle="bold"
+               		android:layout_marginRight="20dp"
+               		android:layout_marginTop="20dp"
+	        		android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+	        	/>
+	    	    
+	    	    <EditText
+	        	    android:id="@+id/landlord_edit_phone_number_EditText"
+	        	    android:background="@drawable/textedit"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_marginLeft="20dp"
+               		android:layout_marginRight="20dp"
+                	android:layout_marginTop="7dp"
+                	android:paddingBottom="6dp"
+    				android:paddingLeft="10dp"
+    				android:paddingRight="10dp"
+    				android:paddingTop="6dp"
+    				android:alpha=".3"
+	        	    android:inputType="phone" />
+	    	    
+	    	    <View
+       				android:adjustViewBounds="true"
+					android:layout_width="match_parent"
+      				android:layout_marginBottom="2dp"
+     				android:layout_marginTop="20dp"
+     				android:orientation="horizontal"
+        			android:layout_height="2dp" 
+        			android:background="#DFDFDF"
+        			android:gravity="center_horizontal|center_vertical" 
+        			android:layout_weight="0"
+        			android:animateLayoutChanges="true">
+    			</View>
+    			
+	    	    <TextView
+	        		android:id="@+id/landlord_change_password_ViewText"
+	        		android:text="@string/change_password"
+	        		android:gravity="center_horizontal|center_vertical"
+	        		android:textAppearance="?android:attr/textAppearanceMedium"
+	        		android:textColor="@color/black"
+	        		android:layout_marginLeft="20dp"
+	        		android:textStyle="bold"
+               		android:layout_marginRight="20dp"
+               		android:layout_marginTop="20dp"
+	        		android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+	        	/>
+	    	    
+	    	    <TextView
+	        		android:id="@+id/landlord_change_password_instructions_ViewText"
+	        		android:text="@string/change_password_instructions"
+	        		android:gravity="center_horizontal|center_vertical"
+	        		android:textAppearance="?android:attr/textAppearanceSmall"
+	        		android:textColor="@color/black"
+	        		android:layout_marginLeft="20dp"
+               		android:layout_marginRight="20dp"
+               		android:layout_marginTop="3dp"
+	        		android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+	        	/>
+	    	    
+	    	    
+	    	    <TextView
+	        		android:id="@+id/landlord_current_password_ViewText"
+	        		android:text="@string/current_password"
+	        		android:gravity="left|center_vertical"
+	        		android:textColor="@color/black"
+	        		android:layout_marginLeft="20dp"
+	        		android:textStyle="bold"
+               		android:layout_marginRight="20dp"
+               		android:layout_marginTop="20dp"
+	        		android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+	        	/>
+	    	    
+	    	    <EditText
+	        	    android:id="@+id/landlord_current_password_EditText"
+	        	    android:background="@drawable/textedit"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_marginLeft="20dp"
+               		android:layout_marginRight="20dp"
+                	android:layout_marginTop="7dp"
+                	android:paddingBottom="6dp"
+    				android:paddingLeft="10dp"
+    				android:paddingRight="10dp"
+    				android:paddingTop="6dp"
+	        	    android:inputType="textPassword" />
+	    	    
+	    	    <TextView
+	        		android:id="@+id/landlord_new_password_ViewText"
+	        		android:text="@string/new_password"
+	        		android:gravity="left|center_vertical"
+	        		android:textColor="@color/black"
+	        		android:layout_marginLeft="20dp"
+	        		android:textStyle="bold"
+               		android:layout_marginRight="20dp"
+               		android:layout_marginTop="20dp"
+	        		android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+	        	/>
+	    	    
+	    	    <EditText
+	        	    android:id="@+id/landlord_new_password_EditText"
+	        	    android:background="@drawable/textedit"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_marginLeft="20dp"
+               		android:layout_marginRight="20dp"
+                	android:layout_marginTop="7dp"
+                	android:paddingBottom="6dp"
+    				android:paddingLeft="10dp"
+    				android:paddingRight="10dp"
+    				android:paddingTop="6dp"
+	        	    android:inputType="textPassword" />
+	    	    
+	    	    <TextView
+	        		android:id="@+id/landlord_confirm__new_password_ViewText"
+	        		android:text="@string/confirm_new_password"
+	        		android:gravity="left|center_vertical"
+	        		android:textColor="@color/black"
+	        		android:layout_marginLeft="20dp"
+	        		android:textStyle="bold"
+               		android:layout_marginRight="20dp"
+               		android:layout_marginTop="20dp"
+	        		android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+	        	/>
+	    	    
+	    	    <EditText
+	        	    android:id="@+id/landlord_confirm_new_password_EditText"
+	        	    android:background="@drawable/textedit"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_marginLeft="20dp"
+               		android:layout_marginRight="20dp"
+                	android:layout_marginTop="7dp"
+                	android:paddingBottom="6dp"
+    				android:paddingLeft="10dp"
+    				android:paddingRight="10dp"
+    				android:paddingTop="6dp"
+	        	    android:inputType="textPassword" />
+	    
+		</LinearLayout>
+		
+	</ScrollView>
+
+	<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/egg_shell">
+		<TableRow>
+        <Button
+	    	android:id="@+id/landlord_edit_save_Button"
+	        android:layout_width="wrap_content"
+	        android:layout_marginTop="0dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="3dp"
+	        android:layout_weight="3"
+	        android:layout_marginBottom="5dp"
+	        android:background="@drawable/button"
+			android:padding="5dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/edit_save" />
+        
+        <Button
+	    	android:id="@+id/landlord_edit_cancel_Button"
+	        android:layout_width="wrap_content"
+	        android:layout_marginTop="0dp"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="3dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginBottom="5dp"
+	        android:background="@drawable/button"
+			android:padding="5dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/cancel" />
+ 		</TableRow>
+ 	</TableLayout>
+
+
+</LinearLayout>

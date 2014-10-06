@@ -1,0 +1,207 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/egg_shell"
+    tools:context=".AddUnit" >
+    
+<TextView
+	    android:text="@string/add_unit_instructions"
+	    android:gravity="left|center_vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_marginLeft="20dp"
+	    android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+      	android:layout_height="wrap_content"
+      	android:textColor="@color/black"
+	    />
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:padding="5dp"
+         >
+        	
+		<LinearLayout
+	    	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/table"
+        	android:paddingBottom="10dp"
+        	android:layout_marginBottom="10dp"
+        	android:paddingLeft="15dp"
+    		android:paddingRight="15dp"
+    		android:paddingTop="5dp"
+        	android:orientation="vertical" >
+	    	
+	        
+	        	<TextView
+	        		android:text="@string/unit_number"
+	        		android:gravity="left|center_vertical"
+	        		android:textColor="@color/black"
+	        		android:layout_marginLeft="20dp"
+	        		android:textStyle="bold"
+               		android:layout_marginRight="20dp"
+               		android:layout_marginTop="10dp"
+	        		android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+	        	/>
+	        	
+	        	<EditText
+	        	    android:id="@+id/unit_number_EditText"
+	        	    android:background="@drawable/textedit"
+	        	    android:layout_width="match_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_marginLeft="20dp"
+               		android:layout_marginRight="20dp"
+                	android:layout_marginTop="7dp"
+                	android:paddingBottom="6dp"
+    				android:paddingLeft="10dp"
+    				android:paddingRight="10dp"
+    				android:paddingTop="6dp"
+	        	    android:inputType="text" />	    	    
+	    	    
+	    	    <TextView
+	        		android:text="@string/start_date"
+	        		android:gravity="left|center_vertical"
+	        		android:textColor="@color/black"
+	        		android:layout_marginLeft="20dp"
+	        		android:textStyle="bold"
+               		android:layout_marginRight="20dp"
+               		android:layout_marginTop="20dp"
+	        		android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+	        	/>
+	    	    
+	    	    <EditText
+	        	    android:id="@+id/unit_start_date_EditText"
+	        	    android:background="@drawable/textedit"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_marginLeft="20dp"
+               		android:layout_marginRight="20dp"
+                	android:layout_marginTop="7dp"
+                	android:paddingBottom="6dp"
+    				android:paddingLeft="10dp"
+    				android:paddingRight="10dp"
+    				android:paddingTop="6dp"
+	        	    android:inputType="date" />
+	    	    
+	    	    <TextView
+	        		android:text="@string/end_date"
+	        		android:gravity="left|center_vertical"
+	        		android:textColor="@color/black"
+	        		android:layout_marginLeft="20dp"
+	        		android:textStyle="bold"
+               		android:layout_marginRight="20dp"
+               		android:layout_marginTop="20dp"
+	        		android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+	        	/>
+	    	    
+	    	    <EditText
+	        	    android:id="@+id/unit_end_date_EditText"
+	        	    android:background="@drawable/textedit"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_marginLeft="20dp"
+               		android:layout_marginRight="20dp"
+                	android:layout_marginTop="7dp"
+                	android:paddingBottom="6dp"
+    				android:paddingLeft="10dp"
+    				android:paddingRight="10dp"
+    				android:paddingTop="6dp"
+	        	    android:inputType="date" />
+	    	    
+	    	    <TextView
+	        		android:text="@string/monthly_rent"
+	        		android:gravity="left|center_vertical"
+	        		android:textColor="@color/black"
+	        		android:layout_marginLeft="20dp"
+	        		android:textStyle="bold"
+               		android:layout_marginRight="20dp"
+               		android:layout_marginTop="20dp"
+	        		android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+	        	/>
+	    	    
+	    	    <EditText
+	        	    android:id="@+id/unit_rent_EditText"
+	        	    android:background="@drawable/textedit"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_marginLeft="20dp"
+               		android:layout_marginRight="20dp"
+                	android:layout_marginTop="7dp"
+                	android:paddingBottom="6dp"
+    				android:paddingLeft="10dp"
+    				android:paddingRight="10dp"
+    				android:paddingTop="6dp"
+	        	    android:inputType="number" />
+	    	    
+	    	    <TextView
+	        		android:text="@string/tenant_email"
+	        		android:gravity="left|center_vertical"
+	        		android:textColor="@color/black"
+	        		android:layout_marginLeft="20dp"
+	        		android:textStyle="bold"
+               		android:layout_marginRight="20dp"
+               		android:layout_marginTop="20dp"
+	        		android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+	        	/>
+	    	    
+	    	    <EditText
+	        	    android:id="@+id/unit_tenant_email_EditText"
+	        	    android:background="@drawable/textedit"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_marginLeft="20dp"
+               		android:layout_marginRight="20dp"
+                	android:layout_marginTop="7dp"
+                	android:paddingBottom="6dp"
+    				android:paddingLeft="10dp"
+    				android:paddingRight="10dp"
+    				android:paddingTop="6dp"
+	        	    android:inputType="textEmailAddress" />
+	    
+		</LinearLayout>
+		
+	</ScrollView>
+	
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/egg_shell">
+    
+        <Button
+    	android:id="@+id/unit_add_add_Button"
+        android:layout_width="0dip"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button"
+		android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_unit" />
+        
+        <Button
+    	android:id="@+id/unit_add_cancel_Button"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button"
+		android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel" />
+ 	</LinearLayout>
+
+</LinearLayout>
+    

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- These components will be dynamically created
+and added to the ScrollView -->
+
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/property_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/table"
+    android:padding="@dimen/activity_horizontal_margin" >
+
+    <TextView
+        android:id="@+id/property_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:textStyle="bold"
+        android:layout_span="2"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:textIsSelectable="true" />
+
+    <Button
+        android:id="@+id/property_select_button"
+        android:background="@drawable/button"
+        android:layout_marginRight="2dp"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select" />
+
+</TableRow>

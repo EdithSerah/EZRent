@@ -1,0 +1,312 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/egg_shell"
+    android:id="@+id/read_message_linearlayout"
+    tools:context=".ReadMessage" >
+
+    <LinearLayout
+       	android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="@string/from"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/black"
+            android:id="@+id/message_first_name_TextView"
+        	/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/black"
+            android:id="@+id/message_last_name_TextView"
+        	/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:text="@string/lpar"
+        	/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="1dp"
+            android:textColor="@color/black"
+            android:id="@+id/message_email_TextView"
+        	/>
+        
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="1dp"
+            android:textColor="@color/black"
+            android:text="@string/rpar"
+        	/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+       	android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="@string/phone_number"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/black"
+            android:id="@+id/message_tenant_phone_number_TextView"
+        	/>
+             
+	</LinearLayout>
+    
+    <LinearLayout
+       	android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="@string/property_name"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/black"
+            android:id="@+id/message_property_name_TextView"
+        	/>
+             
+	</LinearLayout>
+	
+    <LinearLayout
+       	android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="@string/unit_number"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/black"
+            android:id="@+id/message_unit_number_TextView"
+        	/>
+             
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <TextView
+            android:id="@+id/message_subject_display_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:textColor="@color/black"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/table"
+            android:text="@string/subject" />
+             
+	</LinearLayout>
+        
+	<ScrollView
+		android:id="@+id/message_ScrollView"
+        android:layout_width="match_parent"
+        android:background="@drawable/textedit"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_height="0dip"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:padding="5dp" >
+
+        <LinearLayout
+       		android:layout_marginLeft="5dp"
+        	android:layout_marginRight="5dp"
+        	android:layout_marginTop="10dp"
+        	android:gravity="left|top"
+        	android:orientation="horizontal"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+       		>
+        
+       		<TextView
+           		android:layout_width="match_parent"
+           		android:layout_height="wrap_content"
+            	android:gravity="left|center_vertical"
+            	android:layout_margin="5dp"
+            	android:padding="5dp"
+            	android:id="@+id/message_message_text_TextView"
+            	android:textColor="@color/black" />
+
+       		<ImageView
+       		    android:id="@+id/imageView1"
+       		    android:layout_width="wrap_content"
+       		    android:layout_height="wrap_content"
+       		    android:src="@drawable/ezrentlogo4" />
+             
+		</LinearLayout>
+            
+	</ScrollView>
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    android:gravity="center_horizontal|center_vertical"
+	    android:orientation="horizontal" >
+        
+	    <LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_horizontal|center_vertical"
+		    android:orientation="vertical" >
+        
+	        <TextView
+	            android:id="@+id/inbox_attached_image_TV"
+				android:layout_width="wrap_content"
+	           	android:layout_height="wrap_content"
+	            android:gravity="left|center_vertical"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:text="@string/attached_image"
+	            android:textColor="@color/black" />
+	        
+	        <TextView
+	            android:id="@+id/inbox_attached_image_TV2"
+				android:layout_width="wrap_content"
+	           	android:layout_height="wrap_content"
+	            android:gravity="left|center_vertical"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:text="@string/tap"
+	            android:textColor="@color/black" />
+	        
+        </LinearLayout>
+        
+	    <ImageView
+			android:id="@+id/inbox_picture_preview"
+	      	android:contentDescription="@string/picture"
+	      	android:src="@drawable/loading"
+	      	android:layout_marginLeft="10dp"
+	       	android:layout_width="75dp"
+	        android:layout_height="75dp" />
+	    
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="5dp"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="10dp"
+	    android:gravity="center_horizontal"
+	    android:orientation="horizontal" >
+        
+       <Button
+	    	android:id="@+id/message_inbox_Button"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@drawable/button"
+			android:padding="5dp"
+	        android:layout_marginRight="5dp"
+	        android:text="@string/inbox" />
+       
+       <Button
+	    	android:id="@+id/message_home_Button"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@drawable/button"
+			android:padding="5dp"
+			android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:text="@string/home" />
+       
+       <Button
+	    	android:id="@+id/message_delete_Button"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@drawable/button"
+			android:padding="5dp"
+			android:layout_marginLeft="5dp"
+	        android:text="@string/delete" />
+             
+	</LinearLayout>
+
+</LinearLayout>
